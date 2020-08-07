@@ -8,6 +8,7 @@ module.exports = {
     index: './src/main/index.js',
     setup: './src/setup/setup.js',
     dashboard:'./src/dashboard/dashboard.js',
+    guest: './src/guest/guest.js'
   },
   mode: 'development',
   devServer: {
@@ -44,6 +45,12 @@ module.exports = {
       inject: true,
       chunks: ['dashboard'],
       filename: 'dashboard.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/guest/guest.html',
+      inject: true,
+      chunks: ['guest'],
+      filename: 'guest.html'
     })
   ]
 };

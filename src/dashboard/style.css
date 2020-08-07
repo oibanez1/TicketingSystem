@@ -1,3 +1,54 @@
-.h1{
-    color: red;
+.form-control-primary{
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.buggy{
+    color: white;
+    text-align: left;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 70px 0 0 10px;
+    border-right: 1px solid gray;   
+}
+
+.sidebar-left{
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 70px);
+}
+
+.btn-primary{
+    margin-left: 100px;
+}
+
+.search{
+    margin-left: 100px;
+}
+
+.Titles{
+    list-style-type: none;
+}
+
+.description{
+    margin-bottom: 8px;
+}
+
+.row{
+    margin-top: 50px;
+    margin-left: 375px;
+    color: gray;
+}
+
+.tableTick{
+    table-layout: fixed;
+    text-align: center;
+    margin-left: 215px;
+    margin-top: 15px;
 }
