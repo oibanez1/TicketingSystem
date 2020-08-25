@@ -1,3 +1,128 @@
-*{
-    color: red;
+.form-control-primary{
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.buggy{
+    color: white;
+    text-align: left;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 70px 0 0 10px;
+    border-right: 1px solid gray;   
+}
+
+.sidebar-left{
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 70px);
+}
+
+.btn-primary{
+    margin-left: 100px;
+}
+
+.search{
+    margin-left: 100px;
+}
+
+.Titles{
+    list-style-type: none;
+}
+
+.description{
+    margin-bottom: 8px;
+}
+
+.row{
+    margin-top: 50px;
+    margin-left: 375px;
+    color: gray;
+}
+
+.anotherContainer{
+    display: table;
+    width: 115%;
+    margin-left: 325px;
+    margin-top: 25px;
+} 
+
+.tr{
+    display: table-row;
+}
+
+.tdRow{
+    display: table-cell;
+    width: 55px;
+}
+
+.td{
+    display: table-cell;
+}
+
+.ticketColumn{
+    margin-top: 10px;
+}
+
+.ticketItem{
+    margin-left: -40px;
+    margin-bottom: 80px;
+}
+
+.lastTicketItem{
+    margin-left: -120px;
+}
+
+.holder{
+    height: 100px;
+    width: 180px;
+    position: absolute;
+}
+
+.holder p{
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 5px 15px;
+    margin-left: -50px;
+
+
+}
+
+.top{
+    width: 230px;
+    height: 30px;
+    margin-left: -50px;
+    border: 1px solid #333;
+    background: #CCC;
+}
+
+.top h6{
+    margin-left: -50px;
+    line-height: 30px;
+    padding: 0px 60px;
+}
+
+.bottom{
+    width: 230px;
+    height: 15px;
+    margin-left: -50px;
+    border: 1px solid #333;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #333;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    border-left-color: #333;
 }
