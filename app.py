@@ -4,12 +4,6 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 
-app.secret_key = 'b[\xde\xcb\x08a\x96.\xedGb\x18d'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Dragonballz1!'
-app.config['MYSQL_DB'] = 'buggy'
-mysql = MySQL(app)
 
 #Main Page
 @app.route('/login' , methods=['GET' , 'POST'])
