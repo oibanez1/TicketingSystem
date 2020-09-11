@@ -1,9 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for, session
-from flask_mysqldb import MySQL
-
-app = Flask(__name__)
-
-
+from flask import render_template, request, redirect, url_for, session
+from app.__init__ import app
 
 #Main Page
 @app.route('/login' , methods=['GET' , 'POST'])
@@ -30,5 +26,3 @@ def guest(name = None):
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
-
-app.run(debug=True)

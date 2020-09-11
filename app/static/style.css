@@ -9,14 +9,14 @@ body {
 .whole-box{
     border-radius : 0;
     border: 1px solid #ebecf0;
-    /* display: flex;
-    padding: 0px; */
+    display: flex;
+    padding: 0px;
 }
 
 .column{
     flex: 50%;
     padding: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .space{
