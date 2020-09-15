@@ -1,10 +1,14 @@
 from flask import render_template, request, redirect, url_for, session
 from app.__init__ import app
+from app.forms import LoginForm
 
 #Main Page
 @app.route('/login' , methods=['GET' , 'POST'])
 def login():
-    return render_template('index.html')
+    form = LoginForm()
+    if form.validate_on_submit():
+        return redirect(url_for('/dashboard'))
+    return render_template('index.html' , form=form)
 
 #Register
 @app.route('/login/register' , methods=['GET' , 'POST'])

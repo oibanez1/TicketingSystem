@@ -1,0 +1,19 @@
+from app.__init__ import db
+from werkzeug.security import generate_password_hash , check_password_hash
+
+class User(db.Model):
+    __tablename__ = 'users'
+
+    user_id = db.Column(db.Integer , primary_key = True, autoincrement = True)
+    email = db.Column(db.String(128) , unique = True, )
+    password_hash = db.Column(db.String(128))
+    type_of_user = db.Column(db.String(60))
+
+    def set_pass(self , password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_pass(self , password):
+        return check_password_hash(self.password_hash , password)
+
+
+

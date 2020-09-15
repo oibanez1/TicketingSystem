@@ -36,11 +36,15 @@
                 <h1>Sign in Below!<div class="linebar"></div></h1>
                 <!--Form for login-->
                 <div class = "login">
-                <form action="{{ url_for('login') }}" method="post">
-                    <input type ="text" name="username" id ="existingEmail" placeholder="Enter Email Address..." required>
+                <form action="{{ url_for('login') }}" method="post" novalidate>
+                    {{ form.hidden_tag() }}
+                    {{ form.email.label }} {{ form.email(size=32) }} <br>
+                    {{ form.password.label }} {{ form.password(size=32) }} <br>
+                    {{ form.login }}
+                    <!-- <input type ="text" name="username" id ="existingEmail" placeholder="Enter Email Address..." required>
                     <input type ="password" name="password" id ="existingPassword" placeholder="Enter Password..." required>
-                    <button type="submit" class="btn btn-primary log" value="login">Login</button>
-                </form>
+                    <button type="submit" class="btn btn-primary log" value="login">Login</button> -->
+                </form> 
                 </div>
                 <!--End of Form -->
                 <p class ="space"><br>OR USE</p>
