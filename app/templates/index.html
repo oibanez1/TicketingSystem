@@ -36,7 +36,7 @@
                 <h1>Sign in Below!<div class="linebar"></div></h1>
                 <!--Form for login-->
                 <div class = "login">
-                <form action="{{ url_for('login') }}" method="post" novalidate>
+                <form action="{{ url_for('login') }}" method="post">
                     {{ form.hidden_tag() }}
                     {{ form.email.label }} {{ form.email(size=32) }} <br>
                     {{ form.password.label }} {{ form.password(size=32) }} <br>

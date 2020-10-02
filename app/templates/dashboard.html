@@ -102,7 +102,7 @@
       <!--NavBar-->  
         <nav class="navbar navbar-dark bg-dark fixed-top flex-md-nowrap p-0 shadow">
           <a class="navbar-brand col-sm-3 col-md-1 mr-0 buggy">
-            <span class="buggy">Welcome ${user}</span>
+            <span class="buggy">Welcome $</span>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
               Create
@@ -115,13 +115,13 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
               </a>
-              
+              <!--user other settings-->
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">Profile</a>
                 <a class="dropdown-item" href="#">Settings</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a>
               </div>
-            </div>
+\            </div>
     </nav>
     <!--Container?-->
     <div class="container-fluid">
